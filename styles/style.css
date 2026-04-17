@@ -17,7 +17,6 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
-  
 }
 
 h1,
@@ -93,11 +92,11 @@ ol {
 
 .content__list-container {
   position: relative;
-  height: 298px;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  height: 298px;
+  overflow-y: auto;
 }
 
 .content__details {
@@ -117,7 +116,7 @@ ol {
 
 .content__video-card {
   display: flex;
-  align-content: start;
+  align-items: start;
 }
 
 .content__video-card-thumbnail {
@@ -135,7 +134,7 @@ ol {
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: 100%;
+  line-height: 160%;
 }
 
 .content__accent {
@@ -215,6 +214,19 @@ ol {
   padding-top: 5px;
 }
 
+.search-form__label:has(.search-form__textfield:focus-visible) {
+  outline: 1px solid white;
+}
+
+.search-form__label:hover:has(.search-form__checkbox) {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.search-form__label:has(.search-form__checkbox:focus-visible) {
+  outline: 1px solid white;
+}
+
 .search-form__textfield {
   width: 225px;
   height: 25px;
@@ -230,17 +242,13 @@ ol {
   outline: none;
 }
 
-.search-form__label:has(.search-form__textfield:focus-visible) {
-  outline: 1px solid white;
-}
-
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
   font-family: "Fira Sans Condensed";
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: 22px;
+  line-height: 100%;
 }
 
 .search-form__pseudo-checkbox {
@@ -263,22 +271,13 @@ ol {
   opacity: 1;
 }
 
-.search-form__label:hover:has(.search-form__checkbox) {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.search-form__label:has(.search-form__checkbox:focus-visible) {
-  outline: 1px solid white;
-}
-
 .button {
   border: 1px solid white;
   color: #ffffff;
   font-family: "Fira Sans Condensed";
   font-weight: 700;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 100%;
   text-align: center;
   background-color: transparent;
 }
@@ -291,6 +290,9 @@ ol {
 
 .more-button {
   width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .button:hover {
