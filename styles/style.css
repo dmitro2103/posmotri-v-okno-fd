@@ -49,7 +49,7 @@ ol {
 }
 
 .result {
-  padding-top: 68px;
+  padding-top: 80px;
   padding-left: 60px;
 }
 
@@ -57,7 +57,7 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 
 .result__video {
@@ -211,7 +211,6 @@ ol {
   display: flex;
   align-items: center;
   gap: 5px;
-  padding-top: 5px;
 }
 
 .search-form__label:has(.search-form__textfield:focus-visible) {
