@@ -17,6 +17,7 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
+  
 }
 
 h1,
@@ -49,15 +50,15 @@ ol {
 }
 
 .result {
-  margin-top: 68px;
-  margin-left: 60px;
+  padding-top: 68px;
+  padding-left: 60px;
 }
 
 .result__video-container {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
 }
 
 .result__video {
@@ -76,7 +77,7 @@ ol {
 }
 
 .title {
-  margin-bottom: 22px;
+  margin-bottom: 27px;
   font-family: "Oswald";
   font-weight: 700;
   font-size: 75px;
@@ -94,6 +95,9 @@ ol {
   position: relative;
   height: 298px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .content__details {
@@ -109,12 +113,6 @@ ol {
 .content__list-item {
   padding-right: 3px;
   padding-left: 3px;
-}
-
-.content__list-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 .content__video-card {
